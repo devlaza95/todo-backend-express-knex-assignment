@@ -5,7 +5,7 @@ import redisClient from '../utils/redis-client.js';
 
 /**
  * @swagger
- * /auth/register:
+ * /api/auth/register:
  *   post:
  *     summary: Register a new user
  *     tags: [Auth]
@@ -50,6 +50,7 @@ export const register = async (req, res) => {
             .insert({
                 name,
                 email,
+                role: 'admin',
                 password_hash: hash,
             })
             .returning(['id']);
@@ -62,7 +63,7 @@ export const register = async (req, res) => {
 
 /**
  * @swagger
- * /auth/login:
+ * /api/auth/login:
  *   post:
  *     summary: Login a user
  *     tags: [Auth]

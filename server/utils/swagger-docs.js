@@ -8,9 +8,21 @@ const options = {
             version: '1.0.0',
             description: 'API Documentation for the Todo Backend Application',
         },
+        components: {
+            securitySchemes: {
+                bearerAuth: {
+                    type: 'http',
+                    scheme: 'bearer',
+                    bearerFormat: 'JWT',
+                }
+            }
+        },
+        security: [{
+            bearerAuth: []
+        }],
         servers: [
             {
-                url: 'http://localhost:3001',
+                url: 'http://localhost:3000',
                 description: 'Development server',
             },
         ],

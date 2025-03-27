@@ -11,4 +11,4 @@ router.post('/', authMiddleware, createOrganization);
 router.get('/', authMiddleware, getUserOrganizations);
 router.get('/:id', authMiddleware, getUserOrganization);
 
-module.exports = router;
+export default router;
