@@ -1,6 +1,7 @@
 {
   "name": "todo-backend-express-knex",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "heroku-postbuild": "cd server && npx knex migrate:latest",
     "client": "cd client && yarn start",
@@ -11,17 +12,22 @@
     "start": "cd server && node server.js"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
     "bull": "^4.16.5",
     "dotenv": "^8.2.0",
-    "express": "^4.16.4",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.5.0",
     "jest": "^24.9.0",
+    "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "nodemon": "^2.0.2",
     "pg": "^8.0.1",
     "redis": "^4.7.0",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

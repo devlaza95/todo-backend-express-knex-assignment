@@ -1,5 +1,7 @@
-// Abstraction layer to handle knex configuration per enviornment.
-const environment = process.env.NODE_ENV || 'development';
-const config = require('../knexfile.js')[environment];
+import knex from 'knex';
+import knexfile from '../knexfile.js';
 
-module.exports = require('knex')(config);
+const environment = process.env.NODE_ENV || 'development';
+const config = knexfile[environment];
+
+export default knex(config);
