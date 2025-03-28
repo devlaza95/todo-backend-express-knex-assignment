@@ -15,20 +15,27 @@
     "bcrypt": "^5.1.1",
     "body-parser": "^2.2.0",
     "bull": "^4.16.5",
+    "compression": "^1.8.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.21.0",
     "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
     "jest": "^24.9.0",
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.2",
     "pg": "^8.0.1",
     "redis": "^4.7.0",
     "supertest": "^4.0.2",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "validator": "^13.15.0",
+    "winston": "^3.17.0",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

@@ -1,4 +1,5 @@
 import knex from '../database/connection.js';
+import infoLogger from "../middlewares/logger.middleware.js";
 
 
 /**
